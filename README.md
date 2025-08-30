@@ -49,7 +49,6 @@ Confira a solução completa e teste o projeto ao vivo:
 - HTML5 semântico
 - CSS (Grid + Flexbox + variáveis personalizadas)
 - JavaScript (para as interações dinâmicas)
-- Mobile-first workflow
 
 ### O que aprendi
 
