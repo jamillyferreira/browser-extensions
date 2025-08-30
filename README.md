@@ -34,8 +34,8 @@ O usuário deve conseguir:
 
 ### Links
 
-- Solução no Frontend Mentor: [Add solution URL here](https://your-solution-url.com) _em breve_
-- Deploy online: [Add live site URL here](https://your-live-site-url.com) _em breve_
+- Solução no Frontend Mentor: [Ver solução](https://www.frontendmentor.io/solutions/browser-extensions-manager-ui-with-css-grid-and-js-cZZxwmY0k5)
+- Site online (Deploy): [Acessar site](https://browser-extensions-zeta.vercel.app/)
 
 ## Meu processo
 
