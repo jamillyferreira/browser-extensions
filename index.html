@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
@@ -12,7 +10,7 @@
       href="./assets/images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="assets/css/styles.css" />
-    <script src="assets/js/scripst.js" defer></script>
+    <script src="assets/js/scripts.js" defer></script>
     <title>Browser extensions manager UI</title>
   </head>
   <body>
@@ -20,9 +18,13 @@
       <img
         class="header__logo"
         src="assets/images/logo.svg"
-        alt="logo extensions"
+        alt="Logo do Browser Extensions Manager"
       />
-      <button class="header__btn-toggle">
+      <button
+        class="header__btn-toggle"
+        aria-label="Alternar modo claro/escuro"
+        type="button"
+      >
         <img src="assets/images/icon-sun.svg" alt="icone de modo claro" />
       </button>
     </header>
@@ -31,9 +33,17 @@
       <div class="extensions__header">
         <h2 class="extensions__title">Extensions List</h2>
         <div class="extensions__filters">
-          <button class="extensions__btn active" data-filter="all">All</button>
-          <button class="extensions__btn" data-filter="active">Active</button>
-          <button class="extensions__btn" data-filter="inactive">
+          <button
+            class="extensions__btn active"
+            type="button"
+            data-filter="all"
+          >
+            All
+          </button>
+          <button class="extensions__btn" type="button" data-filter="active">
+            Active
+          </button>
+          <button class="extensions__btn" type="button" data-filter="inactive">
             Inactive
           </button>
         </div>
@@ -45,22 +55,22 @@
     </main>
 
     <template class="template">
-      <div class="extensions-card">
-        <div class="extensions-card__header">
+      <article class="extensions-card">
+        <header class="extensions-card__header">
           <div class="card__header-img">
             <img
               class="card__icon"
               src="assets/images/logo-devlens.svg"
-              alt="icone console"
+              alt="Ícone da extensão DevLens"
             />
           </div>
           <div class="extension-card__info">
-            <h4 class="extension-card__title">DevLens</h4>
+            <h3 class="extension-card__title">DevLens</h3>
             <p class="extension-card__description">
               Quickly inspect page layouts and visualize element boundaries.
             </p>
           </div>
-        </div>
+        </header>
 
         <div class="extension-card__actions">
           <button type="reset" class="extensions__btn extension__btn--remove">
@@ -68,13 +78,20 @@
           </button>
           <!-- Button toggle active -->
           <div class="extension-card__toggle">
-            <label class="toggle-switch toggle-switch--small">
-              <input type="checkbox" class="toggle-switch__input" />
+            <label
+              for="toggle-devlens"
+              class="toggle-switch toggle-switch--small"
+            >
+              <input
+                type="checkbox"
+                id="toggle-devlens"
+                class="toggle-switch__input"
+              />
               <span class="toggle-switch__slider"></span>
             </label>
           </div>
         </div>
-      </div>
+      </article>
     </template>
   </body>
 </html>
