@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="assets/js/scripst.js" defer></script>
+    <title>Browser extensions manager UI</title>
+  </head>
+  <body>
+    <header class="header">
+      <img
+        class="header__logo"
+        src="assets/images/logo.svg"
+        alt="logo extensions"
+      />
+      <button class="header__btn-toggle">
+        <img src="assets/images/icon-sun.svg" alt="icone de modo claro" />
+      </button>
+    </header>
+
+    <main class="extensions">
+      <div class="extensions__header">
+        <h2 class="extensions__title">Extensions List</h2>
+        <div class="extensions__filters">
+          <button class="extensions__btn active" data-filter="all">All</button>
+          <button class="extensions__btn" data-filter="active">Active</button>
+          <button class="extensions__btn" data-filter="inactive">
+            Inactive
+          </button>
+        </div>
+      </div>
+
+      <div class="extensions__container">
+        <!-- Dados preenchidos dinamicamente -->
+      </div>
+    </main>
+
+    <template class="template">
+      <div class="extensions-card">
+        <div class="extensions-card__header">
+          <div class="card__header-img">
+            <img
+              class="card__icon"
+              src="assets/images/logo-devlens.svg"
+              alt="icone console"
+            />
+          </div>
+          <div class="extension-card__info">
+            <h4 class="extension-card__title">DevLens</h4>
+            <p class="extension-card__description">
+              Quickly inspect page layouts and visualize element boundaries.
+            </p>
+          </div>
+        </div>
+
+        <div class="extension-card__actions">
+          <button type="reset" class="extensions__btn extension__btn--remove">
+            Remove
+          </button>
+          <!-- Button toggle active -->
+          <div class="extension-card__toggle">
+            <label class="toggle-switch toggle-switch--small">
+              <input type="checkbox" class="toggle-switch__input" />
+              <span class="toggle-switch__slider"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </template>
+  </body>
+</html>
