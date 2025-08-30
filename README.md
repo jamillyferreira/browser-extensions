@@ -34,8 +34,15 @@ O usuário deve conseguir:
 
 ### Links
 
-- Solução no Frontend Mentor: [Ver solução](https://www.frontendmentor.io/solutions/browser-extensions-manager-ui-with-css-grid-and-js-cZZxwmY0k5)
-- Site online (Deploy): [Acessar site](https://browser-extensions-zeta.vercel.app/)
+## 🌐 Acesso à Solução e Deploy
+
+Confira a solução completa e teste o projeto ao vivo:
+
+| Recursos | Link |
+|----------|------|
+| **Solução no Frontend Mentor** | [Ver solução](https://www.frontendmentor.io/solutions/browser-extensions-manager-ui-with-css-grid-and-js-cZZxwmY0k5) – Implementação com HTML, CSS Grid e JavaScript puro |
+| **Site Online (Deploy)** | [Acessar live site](https://browser-extensions-zeta.vercel.app/) – Teste o projeto diretamente no navegador |
+
 
 ## Meu processo
 
